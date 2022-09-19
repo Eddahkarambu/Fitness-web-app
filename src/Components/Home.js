@@ -71,6 +71,39 @@ function Home() {
                      </div>
              </div> 
         </div>
+
+        <div className='final'>
+         <div>
+         <div className='head'>
+            <h2>Services</h2>
+         </div>
+         <div className='list'>
+           <li> Small group personal training.</li>
+           <li> 1:1 personal training</li>
+            <li>Nutrition coach</li>
+           <li> Online personal training</li>
+         </div>
+         </div>
+
+         <div>
+         <div className='head'>
+            <h2>Company</h2>
+         </div>
+         <div className='list'>
+            About
+         </div>
+         </div>
+
+         <div>
+         <div className='head'>
+            <h2>Support</h2>
+         </div>
+         <div className='list'>
+            Contact
+         </div>
+         </div>
+
+        </div>
         </div>
       );
 

@@ -111,5 +111,15 @@ body{
     font-size: 20px;
     line-height: 30px;
 }
-
+.final{
+    background-image: url('../Images/back.jpg');
+    display:flex;
+    justify-content: space-around;
+    color: white;
+    height: 300px;
+}
+.list{
+    font-size: 20px;
+    
+}
 
