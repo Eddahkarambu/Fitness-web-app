@@ -7,11 +7,13 @@ function Navbar(){
    
     return(
         <div className="navbar">
+             <div className='header-icon'>
                 <div className="Heading">
-                    <div className='crossfit'>
+                    <div className='Gym'>
                         <h1> CROSSFIT COLLECTIVE </h1>
                     </div>
                 </div>
+            </div>
             <div className="main-nav">
                 <Link to='/Home'>Home</Link>
                 <Link to='/About'>About</Link>

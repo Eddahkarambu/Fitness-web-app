@@ -1,8 +1,16 @@
+.Heading{
+    margin-top: 30px;
+    font-weight: 20px;
+    color: black;  
+}
 .navbar{
     display:flex;
     justify-content: space-between;
 }
-.main-nav{
+.main-nav {
+    display: flex;
+}
+.main-nav a { 
     float: left;
     color: blue;
     text-align: center;
@@ -11,4 +19,43 @@
     font-size: 20px; 
     margin-top: 30px;
     margin-right: 20px;
+  }
+
+  .main-nav a:hover {
+    background-color: white;
+    color: black;
+    overflow: hidden;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+}
+.mobile-nav a { 
+    float: left;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px; 
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .mobile-nav a:hover {
+    background-color: #ddd;
+    color: black;
+    overflow: hidden;
+  }
+
+  .main-nav{
+    margin-right: 50px;
+    height: fit-content;
+  }
+
+  @media(max-width:818px){
+    .main-nav{
+          display:none;
+      }
+      .navbar {
+        display: block;
+    }
 }
