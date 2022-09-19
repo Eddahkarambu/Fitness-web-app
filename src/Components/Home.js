@@ -1,6 +1,9 @@
 import './Home.css';
 import Navbar from './Navbar.js';
-
+import ladies from '../Images/ladies.jpg'
+import mens from '../Images/mens.jpg'
+import nutrition from '../Images/nutrition.jpg'
+import online from '../Images/online.jpg'
 
 function Home() {
     return (
@@ -32,6 +35,42 @@ function Home() {
                <div className='service'>Our coaching options have been designed from the ground up to put you and your goals first. From one-on-one training in your private studio, to our renowned small group personal training and bespoke nutrition packages- everything we offer has been battle-tested over a decade in the field, to ensure the results you achieve are not only impressive in the short term- but also sustainable for life</div>
              </div> 
              </div>
+
+             
+               <div className='all'> 
+                  <div className='group'>
+                  <img className="ladies" src={ladies} alt="ladies"/>
+                  <div className='explanation1'>
+                     <h1>GROUP TRAINNING</h1>
+                     <div className='paragraphs'>Our Small Group Personal Training is unlike anything you'll have experienced before. In micro training groups of just 6:1, all your workouts are customised, recorded and coached by an experienced personal trainer. The balance of the motivational group environment and 1-2-1 attention makes it the perfect mix to produce fast results, without the bounce back </div>
+                     </div>
+                     </div>
+
+                     <div className='group2'>
+                     <img className="nutrition" src={nutrition} alt="nutrition"/>
+                  <div className='explanation2'>
+                     <h1>NUTRITION TRAINING</h1>
+                     <div className='paragraphs'>We'll teach you how to take control of your health and weight, without relying on any specific diet or products, with our 1-2-1 nutrition coaching. You'll working alongside a qualified nutritionist to build a sustainable approach together, so you'll not only hit your physique goals, but be able to stay there without rigid diets or unrealistic restrictions </div>              
+                    </div>
+                     </div>
+
+                     <div className='group3'>
+                     <img className="mens" src={mens} alt="mens"/>
+                  <div className='explanation2'>
+                     <h1>1-2-1 TRAINING</h1>
+                     <div className='paragraphs'>1-2-1 personal training is the ultimate investment in your health. You'll be working directly with your coach in our private studio, following a bespoke plan to ensure you hit your goals in record time. Whether you want to slim down, add muscle or anything in between, our personal training packages will get you there in a fun and sustainable way</div>
+                     </div>
+                     </div>
+
+                     
+                     <div className='group4'>
+                     <img className="online" src={online} alt="online"/>
+                  <div className='explanation2'>
+                     <h1>ONLINE TRAINING</h1>
+                     <div className='paragraphs'>The Armoury's Online Coaching Packages have been created to take the guesswork out of getting in the best shape of your life. You'll be working 1-2-1 with your Personal Trainer through our Armoury Coaching app- where you'll get workouts designed specifically for you, progress monitored, regular check-ins and nutrition support for unrivalled results, anywhere in the world</div>
+                     </div>
+             </div> 
+        </div>
         </div>
       );
 
