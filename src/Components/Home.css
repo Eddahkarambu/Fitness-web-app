@@ -27,10 +27,11 @@ body{
     font-size: 30px;
 }
 .training{
-    color: blue;
-    font-size: 40px;
+    color: white;
+    font-size: 45px;
     padding-bottom: 20px;
     padding-top: 20px;
+    line-height: 30px;
 }
 .para{
     color:white;
@@ -74,7 +75,7 @@ body{
 }
 
 .ladies{
-    height:500px;
+    height:400px;
     width: 500px;
 }
 .group{
@@ -86,16 +87,16 @@ body{
 }
 
 .mens{
-    height:500px;
+    height:400px;
     width: 500px;
 }
 .nutrition{
-    height:500px;
+    height:400px;
     width: 500px;
 }
 
 .online{
-    height:500px;
+    height:400px;
     width: 500px;
 }
 .all{
@@ -110,13 +111,15 @@ body{
 .paragraphs{
     font-size: 20px;
     line-height: 30px;
+    width: 500px;
+    padding-bottom: 20px;
 }
 .final{
     background-image: url('../Images/back.jpg');
     display:flex;
     justify-content: space-around;
     color: white;
-    height: 300px;
+    
 }
 .list{
     font-size: 20px;
