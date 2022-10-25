@@ -10,13 +10,10 @@ function Signup() {
     const [password, setPassword] = useState('');
     const [confPassword, setConfPassword] = useState('');
 
-
-
     const handleChange = (e) => {
         setFirstname(e.target.value);
       }
-
-      
+ 
     const handleLastnameChange = (e) => {
         setLastname(e.target.value);
       }
@@ -46,44 +43,58 @@ function Signup() {
         <div className="signup">
             <Navbar/>
 
-            <header className="App-header">
-        <form onSubmit={(e) => { handleSubmit(e) }}>
-          <h3> Sign up </h3>
-          <div className="heading">
-            I don't sweat, i sparkle.
-          </div>
+            <div className="Allcontent">
+                <div className="newdiv">
+                    <div className="head">
+                        <h1>Hello Friend</h1>
+                        <div className="paragraph">
+                        <p>To keep connected with us please Sign up with your personal information.</p>
+                        </div>
+                    </div>
+                    <form onSubmit={(e) => { handleSubmit(e) }}>
+                        <h3> Sign up </h3>
+                        <div className="labels">
+                        <label>
+                            Firstname:
+                        </label><br />
+                        <input type="text" value={Firstname} required onChange={(e)=> { handleChange(e) }} /><br />
+                        </div>
 
-          <label >
-            Firstname:
-          </label><br />
-          <input type="text" value={Firstname} required onChange={(e)=> { handleChange(e) }} /><br />
+                        <div className="labels">
+                        <label >
+                            Lastname:
+                        </label><br />
+                        <input type="text" value={Lastname} required onChange={(e)=> { handleLastnameChange(e) }} /><br />
+                        </div>
 
-          <label >
-            Lastname:
-          </label><br />
-          <input type="text" value={Lastname} required onChange={(e)=> { handleLastnameChange(e) }} /><br />
-        
-          <label>
-            Email:
-          </label><br />
-          <input type="email" value={email} required onChange={(e) => { handleEmailChange(e) }} /><br />
-          <label>
-            Password:
-          </label><br />
-          <input type="password" value={password} required onChange={(e) => { handlePasswordChange(e) }} /><br />
-          <label>
-            Confirm Password:
-          </label><br />
-          <input type="password" value={confPassword} required onChange={(e) => { handleConfPasswordChange(e) }} /><br />
-          <div>
-            Already a member? Log in
-          </div>
-          <input type="Sign up" value="Submit" />
-        </form>
-      </header>
+                        <div className="labels">
+                        <label>
+                            Email:
+                        </label><br />
+                        <input type="email" value={email} required onChange={(e) => { handleEmailChange(e) }} /><br />
+                        </div>
 
+                        <div className="labels">
+                        <label>
+                            Password:
+                        </label><br />
+                        <input type="password" value={password} required onChange={(e) => { handlePasswordChange(e) }} /><br/>
+                        </div>
+
+                        <div className="labels">
+                        <label>
+                            Confirm Password:
+                        </label><br />
+                        <input type="password" value={confPassword} required onChange={(e) => { handleConfPasswordChange(e) }} /><br />
+                        </div>
+                        <div>
+                            Already a member? Log in
+                        </div>
+                        <button>Sign up</button>
+                    </form>     
+                </div>
+      </div>
         </div>
-
     )
 }
 export default Signup;
