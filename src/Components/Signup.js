@@ -49,6 +49,9 @@ function Signup() {
             <header className="App-header">
         <form onSubmit={(e) => { handleSubmit(e) }}>
           <h3> Sign up </h3>
+          <div className="heading">
+            I don't sweat, i sparkle.
+          </div>
 
           <label >
             Firstname:
