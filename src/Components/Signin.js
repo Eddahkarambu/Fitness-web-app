@@ -1,24 +1,38 @@
-import React,{useState}  from "react";
-import './Signup.css';
+import React,{useState} from "react";
+import './Signin.css';
 import Navbar from './Navbar.js';
 
 function Signin(){
+    const [email, setEmail] = useState("");
+    const [Password, setPassword] = useState("");
+
+    const handleLastnameChange = (e) => {
+        setEmail(e.target.value);
+      }
+
+      const handleEmailChange = (e) => {
+        setPassword(e.target.value);
+      }
+
+
+
     return(
-        <div className="signup">
+        <div className="signin">
             <Navbar/>
             <div className="Container">
                 <form>
-                    <label for="username"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required/>
+                    <label><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="email" required/>
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required/>
+                    <label ><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required onChange={(e)=> { handleLastnameChange(e) }}/>
 
-                    <button>Sign up</button>
+                    <button>Sign in</button>
 
                     <label>
-                     <input type="checkbox" checked="checked" name="remember"> Remember me</input>
+                     <input type="checkbox"   name="remember" />
                      </label>
+
 
                     
                 </form>
