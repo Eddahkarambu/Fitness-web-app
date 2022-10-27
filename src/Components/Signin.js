@@ -19,29 +19,51 @@ function Signin(){
     return(
         <div className="signin">
             <Navbar/>
-            <div className="Container">
+            <div className="SigninContainer">
+                <div className="combined">
+ 
                 <form>
-                    <label><b>Email</b></label>
-                    <input type="text" placeholder="Email" name="email" required/>
-
-                    <label ><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" required onChange={(e)=> { handleLastnameChange(e) }}/>
-
-                    <button>Sign in</button>
-
-                    <label>
-                     <input type="checkbox"   name="remember" />
-                     </label>
-
-
+                <div className="Headin">
+                    LOGIN TO YOUR ACCOUNT
+                </div>
                     
+                    <div className="fields">
+                    <label><b>Email</b></label>
+                    <input type="text" placeholder="Email" value={email} name="email" required onChange={(e) => { handleEmailChange(e) }}/>
+                    </div>
+
+
+                    <div className="fields">
+                    <label ><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" value={Password} name="password" required onChange={(e)=> { handleLastnameChange(e) }}/>
+                    </div>
+
+                    <div className="forgotpassword">
+                    <label><b>Forgot Password</b></label>
+                    </div>
+                    
+                    <div className="checkbox">
+                    <label ><b>Remember Me</b></label>
+                    <input type="checkbox" value="RememberMe"></input>
+                    </div>
+                    
+
+                    <button>Sign in</button>  
                 </form>
-      
 
-
-            
+                <div className="Firsthead">
+                    <h2>New here!</h2>
+                    <div className="paragraph">
+                        Sign up to discover a great amount of new opportunities
+                    </div>
+                    <div className="btn">
+                    <div className="buttonss">Sign up</div>
+                    </div>
+                   
+                </div>
+               
+                </div>  
             </div>
-           
         </div>
     )
     
