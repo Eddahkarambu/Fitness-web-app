@@ -14,7 +14,7 @@
     color: white;
     font-size: 20px;
     flex: 1;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 h2{
     text-align: center;
@@ -57,6 +57,7 @@ input {
     margin: 1rem;
     font-size: 30px;
     color: rgb(49, 101, 150);
+    font-weight: 100;
   }
   .forgotpassword{
     margin-right: 8rem;

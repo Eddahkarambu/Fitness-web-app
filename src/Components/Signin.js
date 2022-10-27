@@ -14,7 +14,7 @@ function Signin(){
  
                 <form>
                 <div className="Headin">
-                    LOGIN TO YOUR ACCOUNT
+                    SIGN IN TO YOUR ACCOUNT
                 </div>
                     
                     <div className="fields">
@@ -29,7 +29,7 @@ function Signin(){
                     </div>
 
                     <div className="forgotpassword">
-                    <label><b>Forgot Password</b></label>
+                    <label><b>Forgot Password?</b></label>
                     </div>
                     
                     <div className="checkbox">
