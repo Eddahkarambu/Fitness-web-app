@@ -6,16 +6,6 @@ function Signin(){
     const [email, setEmail] = useState("");
     const [Password, setPassword] = useState("");
 
-    const handleLastnameChange = (e) => {
-        setEmail(e.target.value);
-      }
-
-      const handleEmailChange = (e) => {
-        setPassword(e.target.value);
-      }
-
-
-
     return(
         <div className="signin">
             <Navbar/>
@@ -29,13 +19,13 @@ function Signin(){
                     
                     <div className="fields">
                     <label><b>Email</b></label>
-                    <input type="text" placeholder="Email" value={email} name="email" required onChange={(e) => { handleEmailChange(e) }}/>
+                    <input type="text" placeholder="Email" value={email} name="email"  />
                     </div>
 
 
                     <div className="fields">
                     <label ><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" value={Password} name="password" required onChange={(e)=> { handleLastnameChange(e) }}/>
+                    <input type="password" placeholder="Enter Password" value={Password} name="password"  />
                     </div>
 
                     <div className="forgotpassword">
@@ -48,7 +38,7 @@ function Signin(){
                     </div>
                     
 
-                    <button>Sign in</button>  
+                    <button >Sign in</button>  
                 </form>
 
                 <div className="Firsthead">
