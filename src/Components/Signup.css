@@ -35,7 +35,7 @@
     word-wrap: break-word;   
    
   } 
-  input[type=text], input[type=password],input[type=email] {
+  input {
     padding: 15px;
     display: inline-block;
     border: none;
