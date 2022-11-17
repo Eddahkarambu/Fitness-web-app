@@ -1,21 +1,23 @@
 import React,{useState}  from "react";
 import './Signup.css';
+import { register } from '../Redux/Actions/register.actions'
 import Navbar from './Navbar.js';
+import {connect} from "react-redux"
 
-
-function Signup() {
-    const [Firstname, setFirstname] = useState('')
-    const [Lastname, setLastname] = useState('')
+function Signup({registerUser}) {
+    const [firstName, setFirstName] = useState('')
+    const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confPassword, setConfPassword] = useState('');
 
+
     const handleChange = (e) => {
-        setFirstname(e.target.value);
+        setFirstName(e.target.value);
       }
  
-    const handleLastnameChange = (e) => {
-        setLastname(e.target.value);
+    const handleLastNameChange = (e) => {
+        setLastName (e.target.value);
       }
 
       const handleEmailChange = (e) => {
@@ -29,15 +31,19 @@ function Signup() {
       const handleConfPasswordChange = (e) => {
         setConfPassword(e.target.value);
       }
+      
     
-      const handleSubmit = (e) => {
+    
+      const handleSubmit =  (e) => {
+        e.preventDefault();
         if (password !== confPassword) {
           console.log("password Not Match");
         } else {
-          console.log("Form submitted successfully")
-          
+            const name = `${firstName} ${lastName}`
+            const userRole = 'user'          
+            registerUser({name,email,password,userRole})
         }
-        e.preventDefault();
+        
       }
     return(
         <div className="signup">
@@ -57,14 +63,14 @@ function Signup() {
                         <label>
                             Firstname:
                         </label><br />
-                        <input type="text" value={Firstname} required onChange={(e)=> { handleChange(e) }} /><br />
+                        <input type="text" value={firstName} required onChange={(e)=> { handleChange(e) }} /><br />
                         </div>
 
                         <div className="labels">
                         <label >
                             Lastname:
                         </label><br />
-                        <input type="text" value={Lastname} required onChange={(e)=> { handleLastnameChange(e) }} /><br />
+                        <input type="text" value={lastName} required onChange={(e)=> { handleLastNameChange(e) }} /><br />
                         </div>
 
                         <div className="labels">
@@ -97,4 +103,13 @@ function Signup() {
         </div>
     )
 }
-export default Signup;
+
+const mapDispatchToProps = {
+    registerUser: register,
+};
+
+export default connect(null, mapDispatchToProps)(Signup);
+
+
+
+ 

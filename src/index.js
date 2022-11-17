@@ -4,14 +4,10 @@ import './index.css';
 import App from './App';
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux';
-import rootReducer from './reducers/rootReducer'
-import { combineReducers } from 'redux'
+import rootReducer from './Redux/reducers/rootReducer'
 
-const reducer = combineReducers({
-  
-})
 const store = configureStore({
-  reducer,
+  reducer : rootReducer,
 })
 
 // const store = configureStore(rootReducer);

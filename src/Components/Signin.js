@@ -3,9 +3,7 @@ import './Signin.css';
 import Navbar from './Navbar.js';
 
 function Signin(){
-    const [email, setEmail] = useState("");
-    const [Password, setPassword] = useState("");
-
+ 
     return(
         <div className="signin">
             <Navbar/>
@@ -19,13 +17,13 @@ function Signin(){
                     
                     <div className="fields">
                     <label><b>Email</b></label>
-                    <input type="text" placeholder="Email" value={email} name="email"  />
+                    <input type="text" placeholder="Email"  name="email"  />
                     </div>
 
 
                     <div className="fields">
                     <label ><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" value={Password} name="password"  />
+                    <input type="password" placeholder="Enter Password"  name="password"  />
                     </div>
 
                     <div className="forgotpassword">
