@@ -1,29 +1,48 @@
 import React,{useState} from "react";
 import './Signin.css';
+import { authentication } from '../Redux/Actions/authentication.actions'
+import {connect} from "react-redux"
 import Navbar from './Navbar.js';
 
-function Signin(){
- 
+function Signin({authenticationUser}){
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+      }
+    
+      const handlePasswordChange = (e) => {
+        setPassword(e.target.value);
+      }
+
+      const handleSubmit =  (e) => {
+        e.preventDefault();
+        authenticationUser({email,password})
+      }
+
+      
     return(
         <div className="signin">
             <Navbar/>
             <div className="SigninContainer">
                 <div className="combined">
  
-                <form>
+                <form onSubmit={(e) => { handleSubmit(e) }}>
                 <div className="Headin">
                     SIGN IN TO YOUR ACCOUNT
                 </div>
                     
                     <div className="fields">
                     <label><b>Email</b></label>
-                    <input type="text" placeholder="Email"  name="email"  />
+                    <input type="text" placeholder="Email"  name="email" required onChange={(e) => { handleEmailChange(e) }} />
                     </div>
 
 
                     <div className="fields">
                     <label ><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password"  name="password"  />
+                    <input type="password" placeholder="Enter Password"  name="password" required onChange={(e) => { handlePasswordChange(e) }} />
                     </div>
 
                     <div className="forgotpassword">
@@ -57,4 +76,9 @@ function Signin(){
     
 
 }
-export default Signin;
+
+const mapDispatchToProps = {
+    authenticationUser: authentication,
+};
+
+export default connect(null, mapDispatchToProps)(Signin);
