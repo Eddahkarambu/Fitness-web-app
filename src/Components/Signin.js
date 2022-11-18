@@ -1,10 +1,10 @@
 import React,{useState} from "react";
 import './Signin.css';
-import { authentication } from '../Redux/Actions/authentication.actions'
+import { authenticateUser} from '../Redux/Actions/authentication.actions'
 import {connect} from "react-redux"
 import Navbar from './Navbar.js';
 
-function Signin({authenticationUser}){
+function Signin({login}){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -19,10 +19,10 @@ function Signin({authenticationUser}){
 
       const handleSubmit =  (e) => {
         e.preventDefault();
-        authenticationUser({email,password})
+        login({email,password})
       }
 
-      
+
     return(
         <div className="signin">
             <Navbar/>
@@ -78,7 +78,7 @@ function Signin({authenticationUser}){
 }
 
 const mapDispatchToProps = {
-    authenticationUser: authentication,
+    login: authenticateUser,
 };
 
 export default connect(null, mapDispatchToProps)(Signin);

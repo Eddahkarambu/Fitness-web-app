@@ -13,7 +13,7 @@ function failure(message) {
   return { type: userAuthentication.FAILURE, message};
 }
 
-export const register =  (userDetails) => {
+export const authenticateUser =  (userDetails) => {
     return  (dispatch) => {  
         dispatch(request())
         axios.post(`http://localhost:3001/users/login`, {...userDetails}).then(
