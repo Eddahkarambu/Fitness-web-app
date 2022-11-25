@@ -1,5 +1,37 @@
 .Circle{
+
+   
+}
+.personaldetails{
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 20px;
+    color:white;
+}
+.accountdetails{
+    font-size: 30px;
+    font-weight: 30px;
+    color: white;
+    padding-top: 30px;
+}
+.dashboardprofile{
+    padding-left: 30px;
+    background-color: rgb(49, 101, 150);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-height: 100vh;   
+}
+.img{
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #cddc39;
+
+}
+.info1{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    display:flex;
 }
