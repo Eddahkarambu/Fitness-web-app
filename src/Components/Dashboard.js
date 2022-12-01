@@ -1,12 +1,18 @@
 import React  from "react";
-import './Profile.css';
+import './Dashboard.css';
 import Navbar from './Navbar.js';
 import Profile from './Profile';
+import Users from './Users';
 
 function Dashboard(){
     return(
-        <div>
+        <div className="dashboardItems">
+            <div>
             <Profile/>
+            </div>
+            <div className="usersPage">
+            <Users/>
+            </div>
         </div>
     )
 
