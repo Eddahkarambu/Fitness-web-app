@@ -8,21 +8,20 @@ import Dashboard from "./Dashboard";
 // import Programmes from "./Programmes";
 // import Success from "./Success";
 
-
 export default class Paths extends Component {
-    render() {
-        return (
-            <Routes>
-                    <Route path="/" exact element={<Home />}></Route>
-                    <Route path="/Home" exact element={<Home/>}></Route>
-                    <Route path="/signup" exact element={<Signup />}></Route>
-                    <Route path="/signin" exact element={<Signin />}></Route>
-                    <Route path="/Dashboard" exact element={<Dashboard />}></Route>
-                    {/* <Route path="/About" exact element={<About/>}></Route> */}
-                    {/* <Route path="/Programmes" exact element={<Programmes />}></Route>
+  render() {
+    return (
+      <Routes>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/Home" exact element={<Home />}></Route>
+        <Route path="/signup" exact element={<Signup />}></Route>
+        <Route path="/signin" exact element={<Signin />}></Route>
+        <Route path="/Dashboard" exact element={<Dashboard />}></Route>
+        {/* <Route path="/About" exact element={<About/>}></Route> */}
+        {/* <Route path="/Programmes" exact element={<Programmes />}></Route>
                     <Route path="/Success" exact element={<Success/>}></Route>
                     <Route path="/Login" exact element={<Login />}></Route> */}
-                </Routes>
-        )
-    }
+      </Routes>
+    );
+  }
 }
