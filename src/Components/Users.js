@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Users.css";
 import { connect } from "react-redux";
 import { getUsers } from "../Redux/Actions/user.actions";
@@ -20,7 +20,10 @@ const rows = [
   createData(3, "ericko", "erick@gmail.com"),
 ];
 
-function Users() {
+function Users({ getAllUsers }) {
+  useEffect(() => {
+    getAllUsers;
+  }, []);
   return (
     <div className="table">
       <TableContainer component={Paper}>
@@ -50,7 +53,7 @@ function Users() {
 }
 
 const mapDispatchToProps = {
-  login: getUsers,
+  getAllUsers: getUsers,
 };
 
 export default connect(null, mapDispatchToProps)(Users);
