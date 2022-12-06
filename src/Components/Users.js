@@ -1,5 +1,7 @@
 import React from "react";
 import "./Users.css";
+import { connect } from "react-redux";
+import { getUsers } from "../Redux/Actions/user.actions";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -47,4 +49,8 @@ function Users() {
   );
 }
 
-export default Users;
+const mapDispatchToProps = {
+  login: getUsers,
+};
+
+export default connect(null, mapDispatchToProps)(Users);

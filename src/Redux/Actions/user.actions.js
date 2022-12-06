@@ -13,11 +13,11 @@ function failure(message) {
   return { type: userActions.FAILURE, message };
 }
 
-export const getUsers = (userDetails) => {
+export const getUsers = () => {
   return (dispatch) => {
     dispatch(request());
     axios
-      .get(`http://localhost:3001/users/usersId`, { ...userDetails })
+      .get(`http://localhost:3001/users/`)
       .then(function (res) {
         dispatch(success(res));
       })
@@ -26,3 +26,14 @@ export const getUsers = (userDetails) => {
       });
   };
 };
+// const getPosts = () => {
+//     axios
+//       .get("https://jsonplaceholder.typicode.com/posts")
+//       .then((response) => {
+//         console.log(response)
+//       })
+//       .catch((error) => {
+//         console.error(error)
+//       });
+//   };
+//   getPosts();
