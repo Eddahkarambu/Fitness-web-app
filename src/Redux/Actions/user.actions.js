@@ -1,16 +1,16 @@
 import axios from "axios";
-import { userActions } from "../Constants";
+import { userConstants } from "../Constants";
 
 function request() {
-  return { type: userActions.REQUEST };
+  return { type: userConstants.GET_REQUEST };
 }
 
 function success(message) {
-  return { type: userActions.SUCCESS, message };
+  return { type: userConstants.GET_SUCCESS, message };
 }
 
 function failure(message) {
-  return { type: userActions.FAILURE, message };
+  return { type: userConstants.GET_FAILURE, message };
 }
 
 export const getUsers = () => {

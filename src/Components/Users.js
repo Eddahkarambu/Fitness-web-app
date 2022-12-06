@@ -22,8 +22,9 @@ const rows = [
 
 function Users({ getAllUsers }) {
   useEffect(() => {
-    getAllUsers;
+    getAllUsers();
   }, []);
+
   return (
     <div className="table">
       <TableContainer component={Paper}>
