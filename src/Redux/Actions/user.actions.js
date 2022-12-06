@@ -13,11 +13,11 @@ function failure(message) {
   return { type: userActions.FAILURE, message };
 }
 
-export const authenticateUser = (userDetails) => {
+export const getUsers = (userDetails) => {
   return (dispatch) => {
     dispatch(request());
     axios
-      .post(`http://localhost:3001/users/login`, { ...userDetails })
+      .get(`http://localhost:3001/users/usersId`, { ...userDetails })
       .then(function (res) {
         dispatch(success(res));
       })
