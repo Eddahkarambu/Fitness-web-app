@@ -10,19 +10,10 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-function createData(number, name, email) {
-  return { number, name, email };
-}
-
-const rows = [
-  createData(1, "eddah", "eddah@gmail.com"),
-  createData(2, "karambu", "kara@gmail.com"),
-  createData(3, "ericko", "erick@gmail.com"),
-];
-
-function Users({ getAllUsers }) {
+function Users({ getAllUsers, allUsers }) {
   useEffect(() => {
     getAllUsers();
+    console.log(allUsers);
   }, []);
 
   return (
@@ -34,16 +25,18 @@ function Users({ getAllUsers }) {
               <TableCell>S.No</TableCell>
               <TableCell align="right">Name</TableCell>
               <TableCell align="right">Email</TableCell>
+              <TableCell align="right">User Role</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.number}>
+            {allUsers.map((user, index) => (
+              <TableRow key={user._id}>
                 <TableCell component="th" scope="row">
-                  {row.number}
+                  {index + 1}
                 </TableCell>
-                <TableCell align="right">{row.name}</TableCell>
-                <TableCell align="right">{row.email}</TableCell>
+                <TableCell align="right">{user.name}</TableCell>
+                <TableCell align="right">{user.email}</TableCell>
+                <TableCell align="right">{user.userRole}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -57,4 +50,11 @@ const mapDispatchToProps = {
   getAllUsers: getUsers,
 };
 
-export default connect(null, mapDispatchToProps)(Users);
+const mapStateToProps = (state) => {
+  const { users } = state;
+  return {
+    allUsers: users.users,
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Users);
