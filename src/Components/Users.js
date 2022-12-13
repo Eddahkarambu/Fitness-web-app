@@ -13,7 +13,6 @@ import Paper from "@mui/material/Paper";
 function Users({ getAllUsers, allUsers }) {
   useEffect(() => {
     getAllUsers();
-    console.log(allUsers);
   }, []);
 
   return (
