@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Users.css";
+import { connect } from "react-redux";
+import { getUsers } from "../Redux/Actions/user.actions";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -8,17 +10,11 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-function createData(number, name, email) {
-  return { number, name, email };
-}
+function Users({ getAllUsers, allUsers }) {
+  useEffect(() => {
+    getAllUsers();
+  }, []);
 
-const rows = [
-  createData(1, "eddah", "eddah@gmail.com"),
-  createData(2, "karambu", "kara@gmail.com"),
-  createData(3, "ericko", "erick@gmail.com"),
-];
-
-function Users() {
   return (
     <div className="table">
       <TableContainer component={Paper}>
@@ -28,16 +24,18 @@ function Users() {
               <TableCell>S.No</TableCell>
               <TableCell align="right">Name</TableCell>
               <TableCell align="right">Email</TableCell>
+              <TableCell align="right">User Role</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.number}>
+            {allUsers.map((user, index) => (
+              <TableRow key={user._id}>
                 <TableCell component="th" scope="row">
-                  {row.number}
+                  {index + 1}
                 </TableCell>
-                <TableCell align="right">{row.name}</TableCell>
-                <TableCell align="right">{row.email}</TableCell>
+                <TableCell align="right">{user.name}</TableCell>
+                <TableCell align="right">{user.email}</TableCell>
+                <TableCell align="right">{user.userRole}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -47,4 +45,15 @@ function Users() {
   );
 }
 
-export default Users;
+const mapDispatchToProps = {
+  getAllUsers: getUsers,
+};
+
+const mapStateToProps = (state) => {
+  const { users } = state;
+  return {
+    allUsers: users.users,
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Users);
