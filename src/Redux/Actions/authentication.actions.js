@@ -19,6 +19,8 @@ export const authenticateUser = (userDetails) => {
     axios
       .post(`http://localhost:3001/users/login`, { ...userDetails })
       .then(function (res) {
+        console.log(res.data.token);
+        localStorage.setItem("token", res.data.token);
         dispatch(success(res));
       })
       .catch(function (err) {

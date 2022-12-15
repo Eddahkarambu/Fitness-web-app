@@ -16,8 +16,15 @@ function failure(error) {
 export const getUsers = () => {
   return (dispatch) => {
     dispatch(request());
+    const retrivedToken = localStorage.getItem("token");
+    console.log(retrivedToken);
     axios
-      .get(`http://localhost:3001/users/`)
+      .get(`http://localhost:3001/users/`, {
+        headers: {
+          Authorization: `Bearer ${retrivedToken}`,
+        },
+      })
+
       .then(function (res) {
         dispatch(success(res.data));
       })

@@ -19,6 +19,8 @@ export const register = (userDetails) => {
     axios
       .post(`http://localhost:3001/users`, { ...userDetails })
       .then(function (res) {
+        console.log(res.data.token);
+        localStorage.setItem("token", res.data.token);
         dispatch(success(res));
       })
       .catch(function (err) {
