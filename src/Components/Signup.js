@@ -1,16 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Signup.css";
 import { connect } from "react-redux";
 import { register } from "../Redux/Actions/register.actions";
 import Navbar from "./Navbar";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
 
-function Signup({ registerUser }) {
+function Signup({ registerUser, error, loading }) {
+  useEffect(() => {
+    if (error) {
+      toast.error(error);
+    }
+    if (loading) {
+      handleToggle();
+    }
+  }, [error, loading]);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
+  const [open, setOpen] = React.useState(false);
 
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleToggle = () => {
+    setOpen(!open);
+  };
   const handleChange = (e) => {
     setFirstName(e.target.value);
   };
@@ -34,7 +53,7 @@ function Signup({ registerUser }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password !== confPassword) {
-      console.log("password Not Match");
+      toast.error("password Not Match");
     } else {
       const name = `${firstName} ${lastName}`;
       const userRole = "user";
@@ -44,6 +63,14 @@ function Signup({ registerUser }) {
   return (
     <div className="signup">
       <Navbar />
+      <Backdrop
+        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={open}
+        onClick={handleClose}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
+      <ToastContainer />
 
       <div className="Allcontent">
         <div className="newdiv">
@@ -144,4 +171,12 @@ const mapDispatchToProps = {
   registerUser: register,
 };
 
-export default connect(null, mapDispatchToProps)(Signup);
+const mapStateToProps = (state) => {
+  const { registration } = state;
+  return {
+    error: registration.error,
+    loading: registration.loading,
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Signup);
