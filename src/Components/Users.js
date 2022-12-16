@@ -23,19 +23,13 @@ function Users({ getAllUsers, allUsers, error, loading }) {
     if (error) {
       toast.error(error);
     }
-    if (loading) {
-      console.log("loading", loading);
-      handleToggle();
-    }
+    loading ? setOpen(true) : setOpen(false);
   }, [error, loading]);
 
   const [open, setOpen] = React.useState(false);
 
   const handleClose = () => {
     setOpen(false);
-  };
-  const handleToggle = () => {
-    setOpen(!open);
   };
 
   return (

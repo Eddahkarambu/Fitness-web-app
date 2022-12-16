@@ -13,10 +13,9 @@ function Signup({ registerUser, error, loading }) {
     if (error) {
       toast.error(error);
     }
-    if (loading) {
-      handleToggle();
-    }
+    loading ? setOpen(true) : setOpen(false);
   }, [error, loading]);
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,9 +26,7 @@ function Signup({ registerUser, error, loading }) {
   const handleClose = () => {
     setOpen(false);
   };
-  const handleToggle = () => {
-    setOpen(!open);
-  };
+
   const handleChange = (e) => {
     setFirstName(e.target.value);
   };

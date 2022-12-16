@@ -13,9 +13,7 @@ function Signin({ login, error, loading }) {
     if (error) {
       toast.error(error);
     }
-    if (loading) {
-      handleToggle();
-    }
+    loading ? setOpen(true) : setOpen(false);
   }, [error, loading]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,9 +21,6 @@ function Signin({ login, error, loading }) {
 
   const handleClose = () => {
     setOpen(false);
-  };
-  const handleToggle = () => {
-    setOpen(!open);
   };
 
   const handleEmailChange = (e) => {
