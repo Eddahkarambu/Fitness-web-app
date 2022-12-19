@@ -23,7 +23,7 @@ export const register = (userDetails) => {
         dispatch(success());
       })
       .catch(function (err) {
-        dispatch(failure(err));
+        dispatch(failure(err.response.data.message));
       });
   };
 };

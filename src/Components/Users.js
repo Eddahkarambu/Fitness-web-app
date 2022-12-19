@@ -13,8 +13,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
+import { useNavigate } from "react-router-dom";
 
 function Users({ getAllUsers, allUsers, error, loading }) {
+  const navigate = useNavigate();
   useEffect(() => {
     getAllUsers();
   }, []);
@@ -23,6 +25,11 @@ function Users({ getAllUsers, allUsers, error, loading }) {
     if (error) {
       toast.error(error);
     }
+    if (error.toLowerCase().includes("token")) {
+      navigate(`/signin`);
+      toast.error("your session has expired please login again");
+    }
+
     loading ? setOpen(true) : setOpen(false);
   }, [error, loading]);
 
