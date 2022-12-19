@@ -5,12 +5,12 @@ function request() {
   return { type: userAuthentication.REQUEST };
 }
 
-function success(message) {
-  return { type: userAuthentication.SUCCESS, message };
+function success() {
+  return { type: userAuthentication.SUCCESS };
 }
 
-function failure(message) {
-  return { type: userAuthentication.FAILURE, message };
+function failure(error) {
+  return { type: userAuthentication.FAILURE, error };
 }
 
 export const authenticateUser = (userDetails) => {
@@ -19,9 +19,8 @@ export const authenticateUser = (userDetails) => {
     axios
       .post(`http://localhost:3001/users/login`, { ...userDetails })
       .then(function (res) {
-        console.log(res.data.token);
         localStorage.setItem("token", res.data.token);
-        dispatch(success(res));
+        dispatch(success());
       })
       .catch(function (err) {
         dispatch(failure(err));

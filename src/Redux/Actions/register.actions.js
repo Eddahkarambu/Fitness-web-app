@@ -5,12 +5,12 @@ function request() {
   return { type: userRegistration.REQUEST };
 }
 
-function success(message) {
-  return { type: userRegistration.SUCCESS, message };
+function success() {
+  return { type: userRegistration.SUCCESS };
 }
 
-function failure(message) {
-  return { type: userRegistration.FAILURE, message };
+function failure(error) {
+  return { type: userRegistration.FAILURE, error };
 }
 
 export const register = (userDetails) => {
@@ -19,9 +19,8 @@ export const register = (userDetails) => {
     axios
       .post(`http://localhost:3001/users`, { ...userDetails })
       .then(function (res) {
-        console.log(res.data.token);
         localStorage.setItem("token", res.data.token);
-        dispatch(success(res));
+        dispatch(success());
       })
       .catch(function (err) {
         dispatch(failure(err));

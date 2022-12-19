@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Signin.css";
 import { authenticateUser } from "../Redux/Actions/authentication.actions";
 import { connect } from "react-redux";
 import Navbar from "./Navbar.js";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
 
-function Signin({ login }) {
+function Signin({ login, error, loading }) {
+  useEffect(() => {
+    if (error) {
+      toast.error(error);
+    }
+    loading ? setOpen(true) : setOpen(false);
+  }, [error, loading]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [open, setOpen] = React.useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -24,6 +39,14 @@ function Signin({ login }) {
   return (
     <div className="signin">
       <Navbar />
+      <Backdrop
+        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={open}
+        onClick={handleClose}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
+      <ToastContainer />
       <div className="SigninContainer">
         <div className="combined">
           <form
@@ -98,4 +121,12 @@ const mapDispatchToProps = {
   login: authenticateUser,
 };
 
-export default connect(null, mapDispatchToProps)(Signin);
+const mapStateToProps = (state) => {
+  const { authentication } = state;
+  return {
+    error: authentication.error,
+    loading: authentication.loading,
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Signin);
