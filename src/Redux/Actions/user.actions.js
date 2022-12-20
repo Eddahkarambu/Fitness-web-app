@@ -29,7 +29,7 @@ export const getUsers = () => {
         dispatch(success(res.data));
       })
       .catch(function (err) {
-        dispatch(failure(err));
+        dispatch(failure(err.response.data.message));
       });
   };
 };
