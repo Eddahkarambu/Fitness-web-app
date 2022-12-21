@@ -14,10 +14,10 @@ function Navbar() {
       </div>
       <div className="main-nav">
         <Link to="/Home">Home</Link>
-        <Link to="/About">About</Link>
-        <Link to="/Programmes">Programmes</Link>
+        <Link to="/signup">Signup</Link>
+        <Link to="/signin">Signin</Link>
         <Link to="/Success Stories">Services</Link>
-        <Link to="/Login">Login</Link>
+        <Link to="/Dashboard">Dashboard</Link>
       </div>
       {/* <div className="mobile-nav">
                 <Link to='/Home'>Home</Link>
