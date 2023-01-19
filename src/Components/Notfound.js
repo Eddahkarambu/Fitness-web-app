@@ -1,13 +1,13 @@
 import React from "react";
 import "./Notfound.css";
-import errorpage from "../Images/errorpage.jpg";
+import errorPage from "../Images/errorpage.jpg";
 import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
     <div className="alllinks">
       <div className="error">
-        <img className="errorpage" src={errorpage} alt="errorpage" />
+        <img className="errorpage" src={errorPage} alt="errorpage" />
       </div>
       <div className="twoimages">
         <div className="l">Follow the link below</div>
