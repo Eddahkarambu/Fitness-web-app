@@ -19,6 +19,10 @@ export const register = (userDetails) => {
     axios
       .post(`http://localhost:3001/users`, { ...userDetails })
       .then(function (res) {
+        const retriveToken = localStorage.getItem("token");
+        if (retriveToken !== null) {
+          localStorage.removeItem("token");
+        }
         localStorage.setItem("token", res.data.token);
         dispatch(success());
       })
