@@ -3,6 +3,7 @@ import { userRegistration } from "../Constants";
 const initialState = {
   loading: false,
   error: "",
+  authenticated: false,
 };
 
 export function registration(state = initialState, action) {
@@ -16,6 +17,7 @@ export function registration(state = initialState, action) {
       return {
         ...state,
         loading: false,
+        authenticated: true,
       };
     case userRegistration.FAILURE:
       return {

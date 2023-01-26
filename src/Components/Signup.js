@@ -2,19 +2,24 @@ import React, { useState, useEffect } from "react";
 import "./Signup.css";
 import { connect } from "react-redux";
 import { register } from "../Redux/Actions/register.actions";
+import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 
-function Signup({ registerUser, error, loading }) {
+function Signup({ registerUser, error, loading, authenticated }) {
   useEffect(() => {
     if (error) {
       toast.error(error);
     }
     loading ? setOpen(true) : setOpen(false);
-  }, [error, loading]);
+
+    if (authenticated) {
+      navigate("/dashboard");
+    }
+  }, [error, loading, authenticated]);
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -22,6 +27,7 @@ function Signup({ registerUser, error, loading }) {
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
 
   const handleClose = () => {
     setOpen(false);
@@ -51,6 +57,8 @@ function Signup({ registerUser, error, loading }) {
     e.preventDefault();
     if (password !== confPassword) {
       toast.error("password Not Match");
+    } else if (!firstName && !lastName && !email && !password) {
+      toast.error("fill in the correct details");
     } else {
       const name = `${firstName} ${lastName}`;
       const userRole = "user";
@@ -156,7 +164,13 @@ function Signup({ registerUser, error, loading }) {
               <br />
             </div>
             <div>Already a member? Log in</div>
-            <button>Sign up</button>
+            <button
+              onClick={(e) => {
+                handleSubmit(e);
+              }}
+            >
+              Sign up
+            </button>
           </form>
         </div>
       </div>
@@ -173,6 +187,7 @@ const mapStateToProps = (state) => {
   return {
     error: registration.error,
     loading: registration.loading,
+    authenticated: registration.authenticated,
   };
 };
 

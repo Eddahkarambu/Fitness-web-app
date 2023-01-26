@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Signin.css";
+import { useNavigate } from "react-router-dom";
+
 import { authenticateUser } from "../Redux/Actions/authentication.actions";
 import { connect } from "react-redux";
 import Navbar from "./Navbar.js";
@@ -8,16 +10,21 @@ import "react-toastify/dist/ReactToastify.css";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 
-function Signin({ login, error, loading }) {
+function Signin({ login, error, loading, authenticated }) {
   useEffect(() => {
     if (error) {
       toast.error(error);
     }
     loading ? setOpen(true) : setOpen(false);
-  }, [error, loading]);
+
+    if (authenticated) {
+      navigate("/dashboard");
+    }
+  }, [error, loading, authenticated]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
 
   const handleClose = () => {
     setOpen(false);
@@ -31,9 +38,14 @@ function Signin({ login, error, loading }) {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    login({ email, password });
+    console.log("email", email);
+    if (!email && !password) {
+      toast.error("please fill in the correct details");
+    } else {
+      await login({ email, password });
+    }
   };
 
   return (
@@ -99,7 +111,13 @@ function Signin({ login, error, loading }) {
               <input type="checkbox" value="RememberMe"></input>
             </div>
 
-            <button>Sign in</button>
+            <button
+              onClick={(e) => {
+                handleSubmit(e);
+              }}
+            >
+              Sign in
+            </button>
           </form>
 
           <div className="Firsthead">
@@ -108,7 +126,7 @@ function Signin({ login, error, loading }) {
               Sign up to discover a great amount of new opportunities
             </div>
             <div className="btn">
-              <div className="buttonss">Sign up</div>
+              <button onClick={() => navigate("/signup")}>Sign up</button>
             </div>
           </div>
         </div>
@@ -126,6 +144,7 @@ const mapStateToProps = (state) => {
   return {
     error: authentication.error,
     loading: authentication.loading,
+    authenticated: authentication.authenticated,
   };
 };
 
