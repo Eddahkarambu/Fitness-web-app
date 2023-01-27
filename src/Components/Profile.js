@@ -1,15 +1,36 @@
 import React from "react";
 import "./Profile.css";
-import avatar from "../Images/avatar.jpg";
+import axios from "axios";
+// import avatar from "../Images/avatar.jpg";
 import { FaEnvelope, FaIdBadge } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import { MdSwitchAccount } from "react-icons/md";
+// import ImageUploader from "react-images-upload";
 
 function Profile() {
+  const onSelectFile = async (event) => {
+    const file = event.target.files[0];
+    const convertedFile = await convertToBase64(file);
+    const s3URL = await axios.post("http://localhost:3001/upload", {
+      image: convertedFile,
+      imageName: file.name,
+    });
+  };
+
+  const convertToBase64 = (file) => {
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        resolve(reader.result);
+      };
+    });
+  };
   return (
     <div className="dashboardprofile">
       <div className="Circle">
-        <img className="img" src={avatar} alt="avatar" />
+        <input type="file" accept="image/*" onChange={onSelectFile} />
+        {/* <img className="img" src={avatar} alt="avatar" /> */}
       </div>
 
       <div className="personaldetails">
