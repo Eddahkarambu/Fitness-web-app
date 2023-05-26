@@ -1,14 +1,14 @@
 import React from "react";
 import "./Dashboard.css";
-import Profile from "./Profile";
+// import Profile from "./Profile";
 import Users from "./Users";
 
 function Dashboard() {
   return (
     <div className="dashboardItems">
-      <div>
+      {/* <div>
         <Profile />
-      </div>
+      </div> */}
       <div className="usersPage">
         <Users />
       </div>

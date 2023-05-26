@@ -18,6 +18,7 @@ function Navbar() {
         <Link to="/signin">Signin</Link>
         <Link to="/Success Stories">Services</Link>
         <Link to="/Dashboard">Dashboard</Link>
+        <Link to="/Profile">Profile</Link>
       </div>
       {/* <div className="mobile-nav">
                 <Link to='/Home'>Home</Link>
