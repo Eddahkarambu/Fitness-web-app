@@ -25,6 +25,15 @@ function Services() {
           exercise, including gymnastics and boxing.
         </p>
       </div>
+      <div>
+        <h1>Circuit Training</h1>
+        <p>
+          Circuit training is a form of body conditioning that involves
+          endurance training, resistance training, high-intensity aerobics, and
+          exercises performed in a circuit, similar to high-intensity interval
+          training. It targets strength building and muscular endurance.
+        </p>
+      </div>
     </div>
   );
 }
