@@ -34,6 +34,16 @@ function Services() {
           training. It targets strength building and muscular endurance.
         </p>
       </div>
+      <div>
+        <h1>Cardio</h1>
+        <p>
+          Aerobic exercise is physical exercise of low to high intensity that
+          depends primarily on the aerobic energy-generating process. "Aerobic"
+          is defined as "relating to, involving, or requiring oxygen", and
+          refers to the use of oxygen to meet energy demands during exercise via
+          aerobic metabolism adequately.
+        </p>
+      </div>
     </div>
   );
 }
