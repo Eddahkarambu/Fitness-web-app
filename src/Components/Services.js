@@ -1,12 +1,18 @@
 import React from "react";
 import "./Services.css";
-
+import ladies from "../Images/ladies.jpg";
+import ladies from "../Images/ladies.jpg";
+import ladies from "../Images/ladies.jpg";
+import ladies from "../Images/ladies.jpg";
 function Services() {
   return (
     <div>
       {" "}
       <div>FITNESS EXERCISES</div>
       <div>
+        <div>
+          <img className="ladies" src={ladies} alt="ladies" />
+        </div>
         <h1>Aerobics</h1>
         <p>
           Aerobics is a form of physical exercise that combines rhythmic aerobic
@@ -16,6 +22,9 @@ function Services() {
         </p>
       </div>
       <div>
+        <div>
+          <img className="ladies" src={ladies} alt="ladies" />
+        </div>
         <h1>Pilates exercise</h1>
         <p>
           Pilates is a type of exercise that focuses on improving flexibility,
@@ -26,6 +35,9 @@ function Services() {
         </p>
       </div>
       <div>
+        <div>
+          <img className="ladies" src={ladies} alt="ladies" />
+        </div>
         <h1>Circuit Training</h1>
         <p>
           Circuit training is a form of body conditioning that involves
@@ -35,6 +47,9 @@ function Services() {
         </p>
       </div>
       <div>
+        <div>
+          <img className="ladies" src={ladies} alt="ladies" />
+        </div>
         <h1>Cardio</h1>
         <p>
           Aerobic exercise is physical exercise of low to high intensity that
