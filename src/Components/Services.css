@@ -62,3 +62,9 @@
   .service{
     display: flex;
   }
+
+  .fitnessheader{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(6, 6, 16);
+  }

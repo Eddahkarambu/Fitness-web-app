@@ -8,7 +8,7 @@ function Services() {
   return (
     <div>
       {" "}
-      <div>FITNESS EXERCISES</div>
+      <div className="fitnessheader">FITNESS EXERCISES</div>
       <div className="service">
         <div>
           <img className="ladies" src={ladies} alt="ladies" />
