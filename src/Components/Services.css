@@ -58,3 +58,7 @@
     margin: auto;
     text-align: center;
   } */
+
+  .service{
+    display: flex;
+  }

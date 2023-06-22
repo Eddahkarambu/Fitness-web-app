@@ -1,15 +1,15 @@
 import React from "react";
 import "./Services.css";
 import ladies from "../Images/ladies.jpg";
-import ladies from "../Images/ladies.jpg";
-import ladies from "../Images/ladies.jpg";
-import ladies from "../Images/ladies.jpg";
+import mens from "../Images/mens.jpg";
+import nutrition from "../Images/nutrition.jpg";
+import online from "../Images/online.jpg";
 function Services() {
   return (
     <div>
       {" "}
       <div>FITNESS EXERCISES</div>
-      <div>
+      <div className="service">
         <div>
           <img className="ladies" src={ladies} alt="ladies" />
         </div>
@@ -21,9 +21,9 @@ function Services() {
           and cardio-vascular fitness).
         </p>
       </div>
-      <div>
+      <div className="service">
         <div>
-          <img className="ladies" src={ladies} alt="ladies" />
+          <img className="online" src={online} alt="online" />
         </div>
         <h1>Pilates exercise</h1>
         <p>
@@ -34,9 +34,9 @@ function Services() {
           exercise, including gymnastics and boxing.
         </p>
       </div>
-      <div>
+      <div className="service">
         <div>
-          <img className="ladies" src={ladies} alt="ladies" />
+          <img className="mens" src={mens} alt="mens" />
         </div>
         <h1>Circuit Training</h1>
         <p>
@@ -46,9 +46,9 @@ function Services() {
           training. It targets strength building and muscular endurance.
         </p>
       </div>
-      <div>
+      <div className="service">
         <div>
-          <img className="ladies" src={ladies} alt="ladies" />
+          <img className="nutrition" src={nutrition} alt="nutrition" />
         </div>
         <h1>Cardio</h1>
         <p>
