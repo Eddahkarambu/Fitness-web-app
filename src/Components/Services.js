@@ -6,7 +6,7 @@ import nutrition from "../Images/nutrition.jpg";
 import online from "../Images/online.jpg";
 function Services() {
   return (
-    <div>
+    <div className="Serve">
       {" "}
       <div className="fitnessheader">FITNESS EXERCISES</div>
       <div className="service">
