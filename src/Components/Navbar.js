@@ -20,13 +20,6 @@ function Navbar() {
         <Link to="/Dashboard">Dashboard</Link>
         <Link to="/Profile">Profile</Link>
       </div>
-      {/* <div className="mobile-nav">
-                <Link to='/Home'>Home</Link>
-                <Link to='/About'>About</Link>
-                <Link to='/Programmes'>Programmes</Link>
-                <Link to='/Success Stories'>Services</Link>
-                <Link to='/Login'>Login</Link>
-            </div>      */}
     </div>
   );
 }

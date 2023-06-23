@@ -13,7 +13,7 @@ function Services() {
         <div>
           <img className="ladies" src={ladies} alt="ladies" />
         </div>
-        <h1>Aerobics</h1>
+        <h1 className="headings">Aerobics</h1>
         <p>
           Aerobics is a form of physical exercise that combines rhythmic aerobic
           exercise with stretching and strength training routines with the goal
@@ -25,7 +25,7 @@ function Services() {
         <div>
           <img className="online" src={online} alt="online" />
         </div>
-        <h1>Pilates exercise</h1>
+        <h1 className="headings">Pilates exercise</h1>
         <p>
           Pilates is a type of exercise that focuses on improving flexibility,
           strength, and body awareness through controlled movements and was
@@ -38,7 +38,7 @@ function Services() {
         <div>
           <img className="mens" src={mens} alt="mens" />
         </div>
-        <h1>Circuit Training</h1>
+        <h1 className="headings">Circuit Training</h1>
         <p>
           Circuit training is a form of body conditioning that involves
           endurance training, resistance training, high-intensity aerobics, and
@@ -50,7 +50,7 @@ function Services() {
         <div>
           <img className="nutrition" src={nutrition} alt="nutrition" />
         </div>
-        <h1>Cardio</h1>
+        <h1 className="headings">Cardio</h1>
         <p>
           Aerobic exercise is physical exercise of low to high intensity that
           depends primarily on the aerobic energy-generating process. "Aerobic"
