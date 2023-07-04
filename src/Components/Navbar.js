@@ -19,6 +19,10 @@ function Navbar() {
         <Link to="/Services">Services</Link>
         <Link to="/Dashboard">Dashboard</Link>
         <Link to="/Profile">Profile</Link>
+        {/* <link to ="/Programs">Programs</link>
+        <link to ="/Why us">whyus</link>
+        <link to ="/Plans">Plans</link>
+        <link to ="/Testimonials">Testimonials</link> */}
       </div>
     </div>
   );
