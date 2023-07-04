@@ -143,3 +143,13 @@ body{
     color:white;
     text-transform: uppercase;
 }
+.butons{
+    background-color: white;
+    gap:1 rem;
+    font-weight: normal;
+}
+butons>:nth-child(1){
+    color:white;
+    background-color: orange;
+    width: 8rem;
+}

@@ -38,8 +38,8 @@ function Home() {
             </div>
 
             <div className="hero buttons">
-              <buttons className="butons"></buttons>
-              <buttons className="buttons"></buttons>
+              <buttons className="butons"> Get started</buttons>
+              <buttons className="butons"> Learn more</buttons>
             </div>
           </div>
         </div>
