@@ -14,12 +14,27 @@ function Home() {
         <div className="intro">
           <div className="one">
             <div className="smallgroup">1-2-1 & SMALL GROUP</div>
-            <div className="training">PERSONAL TRAINING IN NAIROBI KENYA</div>
+            <div className="training">THE BEST FITNESS CLUB.</div>
             <div className="para">
               We are Crossfit Collective, the leader in strength and
               conditioning equipment nationwide. We provide high-quality
               products at an affordable price, as well as opportunities for
               people to improve their wellness.
+            </div>
+
+            <div className="figures">
+              <div>
+                <span>+20</span>
+                <span>Expert coaches</span>
+              </div>
+              <div>
+                <span>+200</span>
+                <span>Members joined</span>
+              </div>
+              <div>
+                <span>+20</span>
+                <span>Fitness programs</span>
+              </div>
             </div>
           </div>
         </div>
