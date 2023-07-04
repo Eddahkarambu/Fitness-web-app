@@ -36,6 +36,11 @@ function Home() {
                 <span>Fitness programs</span>
               </div>
             </div>
+
+            <div className="hero buttons">
+              <buttons className="butons"></buttons>
+              <buttons className="buttons"></buttons>
+            </div>
           </div>
         </div>
       </div>

@@ -140,6 +140,6 @@ body{
     font-size: 2rem;
 }
 .figures>div>span:nth-of-type(2){
-    color:gray;
-    font-size: 4rem;
+    color:white;
+    text-transform: uppercase;
 }
