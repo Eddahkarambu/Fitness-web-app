@@ -126,4 +126,20 @@ body{
     font-size: 20px;
     
 }
+.figures{
+    display:flex;
+    gap: 2rem;
+}
 
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+.figures>div>span:nth-of-type(1){
+    color:white;
+    font-size: 2rem;
+}
+.figures>div>span:nth-of-type(2){
+    color:gray;
+    font-size: 4rem;
+}
