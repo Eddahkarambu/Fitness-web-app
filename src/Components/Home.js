@@ -37,9 +37,13 @@ function Home() {
               </div>
             </div>
 
-            <div className="hero buttons">
+            <div className="hero-buttons">
               <buttons className="butons"> Get started</buttons>
               <buttons className="butons"> Learn more</buttons>
+            </div>
+
+            <div className="heart-rate">
+              <div>Heart-rate</div>
             </div>
           </div>
         </div>
