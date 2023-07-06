@@ -60,12 +60,13 @@ function Services() {
         </p>
       </div>
       <div className="programs">
-        <div className="Programs-header">
+        <div className="programs-header">
           <span>Explore our</span>
           <span>programs</span>
           <span>To shape you</span>
         </div>
       </div>
+      <div className="program-categories"></div>
     </div>
   );
 }
