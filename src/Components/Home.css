@@ -183,3 +183,15 @@ body{
 .heart-rate>img{
     width: 2rem;
 }
+.heart-rate>:nth-child(2){
+    color:orange; 
+    font-size: 1.5rem; 
+}
+.heart-rate>:nth-child(3){
+    color:orange;  
+    font-size: 1.5rem;
+}
+.heart-rate>:nth-child(1){
+    color:orange; 
+    font-size: 1.5rem; 
+}
