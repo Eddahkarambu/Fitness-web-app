@@ -60,7 +60,7 @@ function Services() {
         </p>
       </div>
       <div className="programs">
-        <div className="Program-header">
+        <div className="Programs-header">
           <span>Explore our</span>
           <span>programs</span>
           <span>To shape you</span>
