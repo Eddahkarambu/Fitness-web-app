@@ -177,8 +177,9 @@ body{
     align-items: start;
     border-radius: 5px;
     position: absolute;
-    right: 4rem;
+    right: 6rem;
     top: 7rem;
+    background-color: rgb(240, 245, 255);
 }
 .heart-rate>img{
     width: 2rem;

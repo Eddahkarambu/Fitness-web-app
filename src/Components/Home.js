@@ -46,7 +46,7 @@ function Home() {
             <div className="heart-rate">
               <div>Heart-rate</div>
               <img className="heart" src={heart} alt="heart" />
-              <div> 20mbps</div>
+              <div> 20 bpm</div>
             </div>
           </div>
         </div>
