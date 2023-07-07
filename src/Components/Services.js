@@ -66,7 +66,11 @@ function Services() {
           <span>To shape you</span>
         </div>
       </div>
-      <div className="program-categories"></div>
+      <div className="program-categories">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 }
