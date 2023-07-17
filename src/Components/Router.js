@@ -23,6 +23,7 @@ export default class Paths extends Component {
         <Route path="/Dashboard" exact element={<Dashboard />}></Route>
         <Route path="/Profile" exact element={<Profile />}></Route>
         <Route path="/Services" exact element={<Services />}></Route>
+
         <Route path="*" element={<Notfound />}></Route>
         {/* <Route path="/About" exact element={<About/>}></Route> */}
         {/* <Route path="/Programmes" exact element={<Programmes />}></Route>

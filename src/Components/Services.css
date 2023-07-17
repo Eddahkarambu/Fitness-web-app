@@ -1,4 +1,9 @@
-  .service{
+  
+    .Serve{
+      background-color: black;
+    }
+  
+  /* .service{
     display: flex;
     color:white;
     
@@ -33,4 +38,4 @@
     text-transform: uppercase;
     font-style: italic;
 
-  }
+  } */
