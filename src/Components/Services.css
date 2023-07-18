@@ -1,6 +1,17 @@
   
     .Serve{
-      background-color: black;
+      background-color: rgb(49, 101, 150);
+      color: white;
+    }
+    .para1{
+      font-size: 20px;
+      display: block;
+    word-wrap: break-word;
+    }
+    .introduction2{
+      /* display: flex; */
+      height:400px;
+      width: 500px;
     }
   
   /* .service{

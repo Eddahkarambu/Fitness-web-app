@@ -12,11 +12,42 @@ function Services() {
         <h1>01.</h1>
         <div>
           <h1>SCHEDULE AN INTRODUCTION</h1>
-          <p>
+          <p className="para1">
             We want to provide you with the best we have to offer - that
             includes setting aside time to get to know you personally!
           </p>
         </div>
+      </div>
+
+      <div className="intorduction2">
+        <h1>02.</h1>
+        <div>
+          <h1>MEET A COACH</h1>
+          <p className="para1">
+            Meet one of our internationally certified coaches to discuss your
+            fitness goals and answer your questions about FirstPower Fitness.
+          </p>
+        </div>
+      </div>
+
+      <div className="intorduction2">
+        <h1>03.</h1>
+        <div>
+          <h1>START YOUR JOURNEY WITH US</h1>
+          <p className="para1">
+            Get in the best shape of your life surrounded by a supportive
+            community! Belong. Become Strong.
+          </p>
+        </div>
+      </div>
+      <div className="Schedule"> Schedule an introduction</div>
+
+      <div>
+        <h1>WHAT MAKES OUR FITNESS GYM UNIQUE?</h1>
+        <p>
+          We are a powerfully positive functional fitness gym, offering premier
+          coaching, equipment and facilities.
+        </p>
       </div>
     </div>
   );
