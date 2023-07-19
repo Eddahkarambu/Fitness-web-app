@@ -56,7 +56,7 @@ function Services() {
 
       <div className="gymservices">
         <h1>WHAT MAKES OUR FITNESS GYM UNIQUE?</h1>
-        <p>
+        <p className="positive">
           We are a powerfully positive functional fitness gym, offering premier
           coaching, equipment and facilities.
         </p>
