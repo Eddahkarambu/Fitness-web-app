@@ -45,11 +45,14 @@
       display: inline-block;
       font-size: 16px;
       margin-top:50px ;
+      margin-bottom: 20px;
       justify-content: center;
-      position: absolute;
+      align-items: center;
+      margin-left: 40%;
     }
     .positive{
       font-size: 20px;
+      margin-left: 70px;
     }
   
   /* .service{

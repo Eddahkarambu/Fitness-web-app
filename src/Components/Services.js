@@ -60,7 +60,7 @@ function Services() {
           We are a powerfully positive functional fitness gym, offering premier
           coaching, equipment and facilities.
         </p>
-        <p>
+        <p className="positive">
           equipment and facilities. In a city of 4 million people, there are a
           lot of places to work out. Come and see the difference.
         </p>
