@@ -144,7 +144,7 @@ function Services() {
 
       <div className="formdetail">
         <div className="questions">Have Any Questions?</div>
-        <div className="question1">
+        <div className="questionone">
           Fill out the form to get in touch with us.
         </div>
         <div className="list">
