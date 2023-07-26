@@ -54,40 +54,80 @@
       font-size: 20px;
       margin-left: 70px;
     }
+
+    .communitypara{
+      height:400px;
+      width: 600px;
+      padding: 50px 50px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+    }
+    .groupworkout{
+      height:400px;
+      width: 600px;
+      padding: 50px 50px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .allcommunity{
+      display: flex;
+      background-color: rgb(118, 178, 207);
+    }
+    .group{
+      background-color: rgb(118, 178, 207);
+      max-width: 100%;
+    }
+
+    .greatcoaching{
+      height:400px;
+      width: 600px;
+      padding: 50px 50px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .allcommunityy{
+      display: flex;
+      margin-top: 20px;
+     
+    }
+
+    .register{
+      height:200px;
+      background-color: red;
+      max-width: 100%;
+    }
+    .registry{
+      font-size: 50px;
+      color: white;
+    }
+    .registerperson{
+      font-size: 30px;
+      color: white;
+      padding-top: 20px;
+    }
+    .completeregistry{
+      font-size: 25px;
+      color: white;
+      display: inline-block;
+      padding-top: 20px;
+    }
+    .reg{
+      display: inline-block;
+    }
+    .ul{
+      font-size: 25px;
+    }
+    .questions{
+      font-size: 50;
+    }
+
   
-  /* .service{
-    display: flex;
-    color:white;
-    
-  }
-
-  .fitnessheader{
-    text-align: center;
-    font-size: 70px;
-    color: white;
-  }
-  .Serve{
-    background-color: black;
-  }
-  .headings{
-    justify-content: center;
-    padding:10px ;
-  }
-  .programs{
-    color:white;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0.2rem;
-  }
-  .programs-header{
-    display:flex;
-    gap: 5rem;
-    font-weight: bold;
-    font-size: 3rem;
-    justify-content: center;
-    color: white;
-    text-transform: uppercase;
-    font-style: italic;
-
-  } */
+  
