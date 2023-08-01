@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import Navbar from "./Navbar.js";
 import apple from "../Images/apple fitness.jpg";
 import greatcoaching from "../Images/greatcoaching.png";
 import groupworkout from "../Images/groupworkout.webp";
@@ -7,6 +8,7 @@ import groupworkout from "../Images/groupworkout.webp";
 function Services() {
   return (
     <div className="Serve">
+      <Navbar />
       <div className="introduction1">
         <h1>STRONG TOGETHER</h1>
         <h2>Getting started is as easy as 1,2, 3</h2>
@@ -156,6 +158,7 @@ function Services() {
             <li>PO Box 2224-00502</li>
           </ul>
         </div>
+        <form></form>
       </div>
     </div>
   );
