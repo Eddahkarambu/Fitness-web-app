@@ -150,15 +150,12 @@ function Services() {
           Fill out the form to get in touch with us.
         </div>
         <div className="list">
-          <ul>
-            Nairobi, Kenya
-            <li>Galleria Shopping Mall</li>
-            <li>Langata Rd/Magadi Rd Junction</li>
-            <li>Nairobi, Kenya</li>
-            <li>PO Box 2224-00502</li>
-          </ul>
+          <div className="listItem">Nairobi, Kenya</div>
+          <div className="listItem">Galleria Shopping Mall</div>
+          <div className="listItem">Langata Rd/Magadi Rd Junction</div>
+          <div className="listItem">Nairobi, Kenya</div>
+          <div className="listItem">PO Box 2224-00502</div>
         </div>
-        <form></form>
       </div>
     </div>
   );
