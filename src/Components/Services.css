@@ -149,8 +149,13 @@
       padding: 50px 50px;
       margin-left: 40px;
     }
-   
+    .listItem{
+      display: flex;
+      font-size: 20px;
     
+    }
+   
+
 
   
   
