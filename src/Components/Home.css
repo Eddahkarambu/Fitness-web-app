@@ -160,12 +160,16 @@ body{
     color:white;
     background-color: orange;
     width: 8rem;
+    margin-top: 25px;
+    
 }
 .hero-buttons>:nth-child(2){
     color:white;
     background-color: transparent;
     width: 8rem;
-    border:2px solid orange
+    border:2px solid orange;
+    margin-top: 25px;
+    
 }
 
 .heart-rate{
