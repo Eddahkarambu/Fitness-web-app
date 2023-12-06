@@ -1,72 +1,53 @@
-/* .Circle{
+/* src/components/UserProfile.css */
 
-   
-}
-.personaldetails{
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: 20px;
-    color:white;
-}
-.accountdetails{
-    font-size: 30px;
-    font-weight: 30px;
-    color: white;
-    padding-top: 30px;
-}
-.dashboardprofile{
-    padding-left: 30px;
-    background-color: rgb(49, 101, 150);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    min-height: 100vh;   
-    height: 100%;
-}
-.img{
-    width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 2px solid #cddc39;
-}
-.info1{
-    display: flex;
-    align-items: center;
-}
-.icon{
-    display:flex;
-} */
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
+.UserProfile {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .title {
-    color: grey;
-    font-size: 18px;
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    display: grid;
+    gap: 5px;
+  }
+  
+  .buttons {
+    text-align: center;
   }
   
   button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
     border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
+    border-radius: 4px;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
   }
   
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
+  button:hover {
+    background-color: #45a049;
   }
   
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
