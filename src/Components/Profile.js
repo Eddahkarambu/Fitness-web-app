@@ -1,9 +1,9 @@
 // src/components/UserProfile.js
 
 import React, { useState } from "react";
-import "./UserProfile.css";
+import "./Profile.css";
 
-const UserProfile = () => {
+const Profile = () => {
   const [editing, setEditing] = useState(false);
   const [userData, setUserData] = useState({
     username: "Eddah",
@@ -109,4 +109,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default Profile;

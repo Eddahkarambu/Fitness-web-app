@@ -6,7 +6,7 @@ import Signup from "./Signup";
 import Signin from "./Signin";
 import Dashboard from "./Dashboard";
 import Notfound from "./Notfound";
-import UserProfile from "./Profile";
+import Profile from "./Profile";
 import Services from "./Services";
 
 // import About from "./About";
@@ -23,7 +23,7 @@ export default class Paths extends Component {
         <Route path="/signup" exact element={<Signup />}></Route>
         <Route path="/signin" exact element={<Signin />}></Route>
         <Route path="/Dashboard" exact element={<Dashboard />}></Route>
-        <Route path="/UserProfile" exact element={<UserProfile />}></Route>
+        <Route path="/Profile" exact element={<Profile />}></Route>
         <Route path="/Services" exact element={<Services />}></Route>
 
         <Route path="*" element={<Notfound />}></Route>
