@@ -4,7 +4,6 @@ import ladies from "../Images/ladies.jpg";
 import mens from "../Images/mens.jpg";
 import nutrition from "../Images/nutrition.jpg";
 import online from "../Images/online.jpg";
-// import heart from "../Images/heart.png";
 
 function Home() {
   return (
