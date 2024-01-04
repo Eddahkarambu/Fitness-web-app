@@ -22,32 +22,6 @@ function Home() {
               products at an affordable price, as well as opportunities for
               people to improve their wellness.
             </div>
-
-            {/* <div className="figures">
-              <div>
-                <span>+20</span>
-                <span>Expert coaches</span>
-              </div>
-              <div>
-                <span>+200</span>
-                <span>Members joined</span>
-              </div>
-              <div>
-                <span>+20</span>
-                <span>Fitness programs</span>
-              </div>
-            </div> */}
-
-            <div className="hero-buttons">
-              <buttons className="butons"> Get started</buttons>
-              <buttons className="butons"> Learn more</buttons>
-            </div>
-
-            {/* <div className="heart-rate">
-              <div>Heart-rate</div>
-              <img className="heart" src={heart} alt="heart" />
-              <div> 20 bpm</div>
-            </div> */}
           </div>
         </div>
       </div>
