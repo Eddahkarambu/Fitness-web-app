@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
-import Hom from "./Hom";
+
 import Home from "./Home";
 import Signup from "./Signup";
 import Signin from "./Signin";
@@ -18,7 +18,6 @@ export default class Paths extends Component {
     return (
       <Routes>
         <Route path="/" exact element={<Home />}></Route>
-        <Route path="/Hom" exact element={<Hom />}></Route>
         <Route path="/Home" exact element={<Home />}></Route>
         <Route path="/signup" exact element={<Signup />}></Route>
         <Route path="/signin" exact element={<Signin />}></Route>
