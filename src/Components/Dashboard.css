@@ -1,9 +1,31 @@
-.dashboardItems{
-    display: flex;
-    
-}
-.usersPage{
-    width: 100%;
-    min-height: 100vh; 
-    margin-top: 30px;  
-}
+/* src/components/Dashboard.css */
+
+.Dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  .chart-section {
+    text-align: center;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
