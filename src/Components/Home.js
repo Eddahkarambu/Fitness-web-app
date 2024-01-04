@@ -25,30 +25,32 @@ function Home() {
         </div>
       </div>
 
-      <div className="intro2">
-        <h1>ITS TIME TO ENHANCE YOUR TRAINNING</h1>
-        <p>
-          We work with men and women that have let fitness slide down their list
-          of priorities, and want to make a change
-        </p>
-        <p>
-          We believe fitness should enhance your life, rather than take away
-          from it- every Armoury Transformation starts with an in-depth look at
-          where you currently are, and creates an achievable path to where you
-          want to be.
-        </p>
-        <p>
-          Whether that's ditching the mid-afternoon energy slump so you can be
-          active with your kids after school, banishing the expanding midsection
-          that's making it harder to slide into your work trousers each passing
-          year, or finally having the body confidence to buy clothes that show
-          off your physique, rather than hide it
-        </p>
-        <p>
-          In just 42 days we'll take you from feeling frustrated with your
-          current trajectory, to feeling proud of the positive habits you've
-          built
-        </p>
+      <div className="parttwo">
+        <div className="intro2">
+          <h1>ITS TIME TO ENHANCE YOUR TRAINNING</h1>
+          <p>
+            We work with men and women that have let fitness slide down their
+            list of priorities, and want to make a change
+          </p>
+          <p>
+            We believe fitness should enhance your life, rather than take away
+            from it- every Armoury Transformation starts with an in-depth look
+            at where you currently are, and creates an achievable path to where
+            you want to be.
+          </p>
+          <p>
+            Whether that's ditching the mid-afternoon energy slump so you can be
+            active with your kids after school, banishing the expanding
+            midsection that's making it harder to slide into your work trousers
+            each passing year, or finally having the body confidence to buy
+            clothes that show off your physique, rather than hide it
+          </p>
+          <p>
+            In just 42 days we'll take you from feeling frustrated with your
+            current trajectory, to feeling proud of the positive habits you've
+            built
+          </p>
+        </div>
       </div>
 
       <div className="background">

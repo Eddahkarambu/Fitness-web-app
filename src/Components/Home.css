@@ -30,13 +30,14 @@ body{
     color: white;
     font-size: 45px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     line-height: 30px;
     
 }
 .para{
     color:white;
     font-size: 20px;
+    padding-top: 30px;
 }
 
 .background{
