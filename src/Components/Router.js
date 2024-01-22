@@ -9,10 +9,6 @@ import Notfound from "./Notfound";
 import Profile from "./Profile";
 import Services from "./Services";
 
-// import About from "./About";
-// import Programmes from "./Programmes";
-// import Success from "./Success";
-
 export default class Paths extends Component {
   render() {
     return (
@@ -24,12 +20,7 @@ export default class Paths extends Component {
         <Route path="/Dashboard" exact element={<Dashboard />}></Route>
         <Route path="/Profile" exact element={<Profile />}></Route>
         <Route path="/Services" exact element={<Services />}></Route>
-
         <Route path="*" element={<Notfound />}></Route>
-        {/* <Route path="/About" exact element={<About/>}></Route> */}
-        {/* <Route path="/Programmes" exact element={<Programmes />}></Route>
-                    <Route path="/Success" exact element={<Success/>}></Route>
-                    <Route path="/Login" exact element={<Login />}></Route> */}
       </Routes>
     );
   }

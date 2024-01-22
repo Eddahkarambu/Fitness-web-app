@@ -4,6 +4,7 @@ import ladies from "../Images/ladies.jpg";
 import mens from "../Images/mens.jpg";
 import nutrition from "../Images/nutrition.jpg";
 import online from "../Images/online.jpg";
+// import hands from "../Images/hands.webp";
 
 function Home() {
   return (
@@ -129,31 +130,22 @@ function Home() {
         </div>
       </div>
 
-      <div className="final">
-        <div>
-          <div className="head">
-            <h2>Services</h2>
-          </div>
-          <div className="list">
-            <li> Small group personal training.</li>
-            <li> 1:1 personal training</li>
-            <li>Nutrition coach</li>
-            <li> Online personal training</li>
-          </div>
+      <div className="secondlast">
+        <div className="registration">REGISTER NOW TO GET MORE DETAILS</div>
+        <div className="registration1">
+          WHERE HEALTH, BEAUTY AND FITNESS MEET
         </div>
+        <button className="appbutton">Appontment</button>
+      </div>
 
-        <div>
-          <div className="head">
-            <h2>Company</h2>
-          </div>
-          <div className="list">About</div>
-        </div>
-
-        <div>
-          <div className="head">
-            <h2>Support</h2>
-          </div>
-          <div className="list">Contact</div>
+      <div className="finalpart">
+        <div className="crossfit">The Best Fitness Gym ever</div>
+        <div className="usefullinks">USEFUL LINKS</div>
+        <div className="lists">
+          <li>Services</li>
+          <li>Dashboard</li>
+          <li>Profile</li>
+          <li>Schedule Consult</li>
         </div>
       </div>
     </div>

@@ -20,11 +20,6 @@ function Navbar() {
         <Link to="/Dashboard">Dashboard</Link>
         <Link to="/Profile">Profile</Link>
         <Link to="/Schedule Consult">Schedule Consult</Link>
-
-        {/* <link to ="/Programs">Programs</link>
-        <link to ="/Why us">whyus</link>
-        <link to ="/Plans">Plans</link>
-        <link to ="/Testimonials">Testimonials</link> */}
       </div>
     </div>
   );
