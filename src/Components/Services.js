@@ -93,12 +93,12 @@ function Services() {
               Programs and Specialty Classes are intentionally about
               Togetherness.
             </p>
-            <p>
+            {/* <p>
               While everyone's goals may differ, the bottom line is, if fitness
               is fun and personal connections are meaningful, your motivation is
               going to increase. If you have a WHY, our group classes are the
               HOW that gets you where you want to be.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -145,11 +145,6 @@ function Services() {
       </div>
 
       <div className="formdetail">
-        <div className="questions">Have Any Questions?</div>
-        <div className="questionone">
-          Fill out the form to get in touch with us.
-        </div>
-
         <div className="list">
           <div className="listItem">Nairobi, Kenya</div>
           <div className="listItem">Galleria Shopping Mall</div>
