@@ -7,6 +7,9 @@ function Support() {
       <Navbar />
 
       <div className="Support-programs">
+      <div>
+        <img className="apple" src={apple} alt="apple" />
+      </div>
         <div className="support">NEED SUPPORT WE ARE HERE FOR YOU</div>;
         <div className="problem1">
           If you are having problems with our app or services, we’re here to
