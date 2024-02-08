@@ -19,7 +19,7 @@ function Navbar() {
         <Link to="/Services">Services</Link>
         <Link to="/Dashboard">Dashboard</Link>
         <Link to="/Profile">Profile</Link>
-        <Link to="/Support-programs">Profile</Link>
+        <Link to="/Support">Support</Link>
         <Link to="/Schedule Consult">Schedule Consult</Link>
       </div>
     </div>
