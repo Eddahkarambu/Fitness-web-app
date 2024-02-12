@@ -22,8 +22,9 @@ function Support() {
         </div>
         <div className="problem2">
           Visit our Help Desk to browse our user guides and frequently asked
-          questions:
+          questions
         </div>
+        <div className="helpbutton">Help Desk</div>
       </div>
     </div>
   );
