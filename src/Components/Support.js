@@ -9,7 +9,7 @@ function Support() {
       <Navbar />
 
       <div className="Support-programs">
-        <div>
+        <div className="customerservice">
           <img
             className="customerservice"
             src={customerservice}
