@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar.js";
+import "./Support.css";
 import customerservice from "../Images/customerservice.jpg";
 
 function Support() {
