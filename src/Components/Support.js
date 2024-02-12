@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar.js";
+import customerservice from "../Images/customerservice.jpg";
 
 function Support() {
   return (
@@ -7,9 +8,13 @@ function Support() {
       <Navbar />
 
       <div className="Support-programs">
-      <div>
-        <img className="apple" src={apple} alt="apple" />
-      </div>
+        <div>
+          <img
+            className="customerservice"
+            src={customerservice}
+            alt="customerservice"
+          />
+        </div>
         <div className="support">NEED SUPPORT WE ARE HERE FOR YOU</div>;
         <div className="problem1">
           If you are having problems with our app or services, we’re here to
