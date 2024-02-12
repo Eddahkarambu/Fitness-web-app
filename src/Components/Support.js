@@ -18,7 +18,7 @@ function Support() {
         </div>
         <div className="support">NEED SUPPORT WE ARE HERE FOR YOU</div>;
         <div className="problem1">
-          If you are having problems with our app or services, we’re here to
+          If you are having problems with our app or services, we are here to
           help!
         </div>
         <div className="problem2">
@@ -26,6 +26,11 @@ function Support() {
           questions
         </div>
         <div className="helpbutton">Help Desk</div>
+        <div className="problem3">
+          Cannot find the answer you are looking for? Drop us a line at
+          app@strengthlog.com and we will get back to you within a workday!
+        </div>
+        <div className="contactbutton">Contact us</div>
       </div>
     </div>
   );

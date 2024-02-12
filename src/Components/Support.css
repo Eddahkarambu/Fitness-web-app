@@ -33,6 +33,10 @@
   }
   .problem2{
     font-size: 30px;
-    padding: 50px 100px;
+    /* padding: 50px 100px; */
+    text-align: center;
+  }
+  .problem3{
+    font-size:30px ;
     text-align: center;
   }
