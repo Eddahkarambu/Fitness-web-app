@@ -32,6 +32,8 @@ function Support() {
         </div>
         <div className="contactbutton">Contact us</div>
       </div>
+
+      <div></div>
     </div>
   );
 }

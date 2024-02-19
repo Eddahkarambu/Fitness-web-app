@@ -13,14 +13,30 @@ function Navbar() {
         </div>
       </div>
       <div className="main-nav">
-        <Link to="/Home">Home</Link>
-        <Link to="/signup">Signup</Link>
-        <Link to="/signin">Signin</Link>
-        <Link to="/Services">Services</Link>
-        <Link to="/Dashboard">Dashboard</Link>
-        <Link to="/Profile">Profile</Link>
-        <Link to="/Support">Support</Link>
-        <Link to="/Schedule Consult">Schedule Consult</Link>
+        <Link to="/Home" className="Home">
+          Home
+        </Link>
+        <Link to="/signup" className="Signup">
+          Signup
+        </Link>
+        <Link to="/signin" className="Signin">
+          Signin
+        </Link>
+        <Link to="/Services" className="Services">
+          Services
+        </Link>
+        <Link to="/Dashboard" className="Dashboard">
+          Dashboard
+        </Link>
+        <Link to="/Profile" className="Profile">
+          Profile
+        </Link>
+        <Link to="/Support" className="Support">
+          Support
+        </Link>
+        <Link to="/Schedule Consult" className="Consult">
+          Schedule Consult
+        </Link>
       </div>
     </div>
   );
