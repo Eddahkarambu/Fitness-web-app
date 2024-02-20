@@ -34,9 +34,12 @@ function Navbar() {
         <Link to="/Support" className="Support">
           Support
         </Link>
-        <Link to="/Schedule Consult" className="Consult">
-          Schedule Consult
-        </Link>
+
+        <div>
+          <Link to="/Schedule Consult" className="Consult">
+            Schedule Consult
+          </Link>
+        </div>
       </div>
     </div>
   );
