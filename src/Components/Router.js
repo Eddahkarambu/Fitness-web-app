@@ -9,6 +9,7 @@ import Notfound from "./Notfound";
 import Profile from "./Profile";
 import Services from "./Services";
 import Support from "./Support";
+import Consult from "./Consult";
 
 export default class Paths extends Component {
   render() {
@@ -22,6 +23,7 @@ export default class Paths extends Component {
         <Route path="/Profile" exact element={<Profile />}></Route>
         <Route path="/Support" exact element={<Support />}></Route>
         <Route path="/Services" exact element={<Services />}></Route>
+        <Route path="/Consult" exact element={<Consult />}></Route>
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
     );
