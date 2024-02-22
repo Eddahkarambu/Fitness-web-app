@@ -7,7 +7,7 @@ function Consult() {
     <div className="consultation">
       <Navbar />
 
-      <div className="consultheader"></div>
+      <div className="consultheader">CROSSFIT COLLECTIVE</div>
 
       <div className="groupclasses">
         Functional fitness at its best. Coach-led group classes.
