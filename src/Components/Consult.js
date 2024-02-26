@@ -20,6 +20,24 @@ function Consult() {
         skilled trainer, incorporating body weight exercises, barbells, and
         everything in between.
       </div>
+
+      <div>GROUP CLASSES AND COMMUNITY</div>
+      <div>
+        Our experience is that beginners and seasoned athletes rise to the
+        occasion, are more energized, and produce longer-lasting results when
+        they're surrounded by a community that encourages and empowers them
+        through every workout. That's why our FPF Core Programs and Specialty
+        Classes are intentionally about Togetherness. While everyone's goals may
+        differ, the bottom line is, if fitness is fun and personal connections
+        are meaningful, your motivation is going to increase. If you have a WHY,
+        our group classes are the HOW that gets you where you want to be.
+      </div>
+
+      <div>PREP COURSES</div>
+      <div>
+        Your safety and wellness are our priority! Because we care, everyone
+        starts off with a good foundation.
+      </div>
     </div>
   );
 }
