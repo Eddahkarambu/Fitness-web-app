@@ -21,7 +21,7 @@ function Consult() {
         everything in between.
       </div>
 
-      <div>GROUP CLASSES AND COMMUNITY</div>
+      <div className="classesgroup">GROUP CLASSES AND COMMUNITY</div>
       <div>
         Our experience is that beginners and seasoned athletes rise to the
         occasion, are more energized, and produce longer-lasting results when
