@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar.js";
 import "./Consult.css";
+import classes from "../Images/classes.jpg";
 
 function Consult() {
   return (
@@ -31,6 +32,10 @@ function Consult() {
         differ, the bottom line is, if fitness is fun and personal connections
         are meaningful, your motivation is going to increase. If you have a WHY,
         our group classes are the HOW that gets you where you want to be.
+      </div>
+      <div>
+        {" "}
+        <img className="classes" src={classes} alt="classes" />
       </div>
 
       <div>PREP COURSES</div>
