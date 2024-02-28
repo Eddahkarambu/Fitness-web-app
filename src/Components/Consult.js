@@ -25,7 +25,7 @@ function Consult() {
       <div className="everythingclasses">
         <div className="everythinggroup">
           <div className="classesgroup">GROUP CLASSES AND COMMUNITY</div>
-          <div>
+          <div className="classgroupparagrapgh">
             Our experience is that beginners and seasoned athletes rise to the
             occasion, are more energized, and produce longer-lasting results
             when they're surrounded by a community that encourages and empowers
@@ -39,10 +39,11 @@ function Consult() {
         </div>
         <div>
           {" "}
-          <img className="classes" src={classes} alt="classes" />
+          <img className="classesimage" src={classes} alt="classes" />
         </div>
       </div>
 
+      <div></div>
       <div>PREP COURSES</div>
       <div>
         Your safety and wellness are our priority! Because we care, everyone

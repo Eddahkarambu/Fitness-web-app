@@ -13,6 +13,7 @@
     padding-left: 30%;
     margin-top:20px ;
 }
+
 .consultexplantion{
     word-wrap: break-word; 
     display: inline-block;
@@ -33,8 +34,39 @@
     font-size: 50px;
     font-weight: bold;
     color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
+.everythingclasses{
+    display: flex;
+    margin-top: 60px;
+    background-color: skyblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
 
+.classgroupparagrapgh{
+    word-wrap: break-word; 
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+.everythinggroup{
+    margin-left: 10%;
+    
+}
+
+.classesimage{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.classgroupparagrapgh{
+    margin-top: 20px;
 }
 
 
