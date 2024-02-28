@@ -43,11 +43,12 @@ function Consult() {
         </div>
       </div>
 
-      <div></div>
-      <div>PREP COURSES</div>
-      <div>
-        Your safety and wellness are our priority! Because we care, everyone
-        starts off with a good foundation.
+      <div className="everythingprepcourse">
+        <div className="prepcourse">PREP COURSES</div>
+        <div className="everythingprep">
+          Your safety and wellness are our priority! Because we care, everyone
+          starts off with a good foundation.
+        </div>
       </div>
     </div>
   );

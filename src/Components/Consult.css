@@ -69,4 +69,19 @@
     margin-top: 20px;
 }
 
+.everythingprepcourse{
+    margin-left: 10%;
+    background-color: grey;
+    width: 50%;
+    height:40% ;
+    color: white;
+
+}
+.prepcourse{
+    font-size: 50px;
+    font-weight: bold;
+}
+.everythingprep{
+    font-size: 30px;
+}
 
