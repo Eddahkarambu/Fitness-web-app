@@ -71,17 +71,22 @@
 
 .everythingprepcourse{
     margin-left: 10%;
+    margin-right: 10%;
     background-color: grey;
-    width: 50%;
     height:40% ;
     color: white;
+    margin-bottom: 30px;
+    padding-left:30px ;
 
 }
 .prepcourse{
     font-size: 50px;
     font-weight: bold;
+    margin-top: 20px;
 }
 .everythingprep{
     font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
