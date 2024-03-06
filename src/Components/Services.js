@@ -17,7 +17,7 @@ function Services() {
 
       <div className="intorduct">
         <div className="intorduction2">
-          <div className="expl">
+          <div className="expl2">
             <h1>01.</h1>
             <div>
               <h1>SCHEDULE AN INTRODUCTION</h1>
@@ -30,7 +30,7 @@ function Services() {
         </div>
 
         <div className="intorduction2">
-          <div className="expl">
+          <div className="expl3">
             <h1>02.</h1>
             <div>
               <h1>MEET A COACH</h1>
