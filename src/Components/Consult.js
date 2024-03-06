@@ -50,6 +50,15 @@ function Consult() {
           starts off with a good foundation.
         </div>
       </div>
+
+      <div className="everythingintrocost">
+        <div className="introcost1">Intro to CrossFit @ 8,000/=</div>
+        <div className="introcost2">
+          New member sign-up is 22,500/= for Intro to CrossFit + Gold Monthly
+        </div>
+      </div>
+
+      <div>Hello</div>
     </div>
   );
 }

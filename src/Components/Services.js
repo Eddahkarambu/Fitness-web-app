@@ -136,6 +136,7 @@ function Services() {
         <div className="reg">
           <div className="registry">REGISTRATION FORM</div>
           <div className="registerperson">Register in person</div>
+
           <div className="completeregistry">
             ...or download, complete, and email your registration to
             lauren@firstpowerfitness.com. Call +254 799159971 to have any
