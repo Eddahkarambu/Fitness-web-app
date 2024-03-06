@@ -9,6 +9,7 @@ function Services() {
   return (
     <div className="Serve">
       <Navbar />
+
       <div className="introduction1">
         <h1>STRONG TOGETHER</h1>
         <h2>Getting started is as easy as 1,2, 3</h2>
