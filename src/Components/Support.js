@@ -25,12 +25,16 @@ function Support() {
           Visit our Help Desk to browse our user guides and frequently asked
           questions
         </div>
-        <div className="helpbutton">Help Desk</div>
+        <div className="helpbutton1">
+          <div className="helpbutton">Help Desk</div>
+        </div>
         <div className="problem3">
           Cannot find the answer you are looking for? Drop us a line at
           app@strengthlog.com and we will get back to you within a workday!
         </div>
-        <div className="contactbutton">Contact us</div>
+        <div className="contactbutton1">
+          <div className="contactbutton">Contact us</div>
+        </div>
       </div>
 
       <div></div>

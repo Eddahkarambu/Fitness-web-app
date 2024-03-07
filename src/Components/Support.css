@@ -1,5 +1,5 @@
 .helpbutton{
-    border-radius: 40%;
+    border-radius: 50%;
     background-color: blue;
     border: none;
     color: white;
@@ -9,7 +9,7 @@
     display: inline-block;
     font-size: 16px;
     justify-content: center;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 
 }
 
@@ -58,7 +58,7 @@
 
 
 
-    border-radius: 40%;
+    border-radius: 50%;
     background-color: blue;
     border: none;
     color: white;
@@ -70,3 +70,20 @@
     justify-content: center;
 
   }
+
+  .contactbutton1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .helpbutton1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
