@@ -83,9 +83,9 @@ body{
    margin-left: 20%;
 }
 
-.ladies{
-    height:400px;
-    width: 500px;
+.groupphoto{
+    height:500px;
+    width: 600px;
 }
 
 .explanation1{
@@ -94,25 +94,24 @@ body{
 }
 
 .mens{
-    height:400px;
-    width: 500px;
+    height:500px;
+    width: 600px;
 }
 .nutrition{
-    height:400px;
-    width: 500px;
+    height:500px;
+    width: 600px;
 }
 
 .online{
-    height:400px;
-    width: 500px;
+    height:500px;
+    width: 600px;
 }
 .all{
     display: grid;
     grid-template-columns: auto auto ;
     grid-gap: 10px;
     padding: 10px;
-    margin-left: 10%;
-    
+    margin-left: 10%;  
 }
 
 .paragraphs{
@@ -209,6 +208,11 @@ body{
 .finalpart{
     background-color: rgb(49, 49, 167);
 }
+.photos{
+    font-size: 40px;
+    margin-left: 40px;
+    font-weight: 20px;
+}
 
 .secondlast{
     background-image: url('../Images/hands.webp');
@@ -241,11 +245,24 @@ body{
 .appbutton {
     background-color: white;
     color: black;
-    border: 2px solid #04AA6D; /* Green */
-    /* display: flex; */
-    position: absolute;
-    /* justify-content: center;
-    align-content: center; */
+    border: 2px solid #04AA6D;
+    display: flex;
+    font-size: 20px;
+    font-weight: 200;
+    justify-content: center;
+    align-content: center;
+    width: 10%;
+    height: 8%;
+    padding-top: 10px;
+    margin-left: 50;
+    padding-bottom: 10px;
+  }
+  .appbutton1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .crossfit{
     font-size: 30px;

@@ -1,6 +1,6 @@
 import "./Home.css";
 import Navbar from "./Navbar.js";
-import ladies from "../Images/ladies.jpg";
+import groupphoto from "../Images/groupphoto.jpg";
 import mens from "../Images/mens.jpg";
 import nutrition from "../Images/nutrition.jpg";
 import online from "../Images/online.jpg";
@@ -69,7 +69,21 @@ function Home() {
       </div>
 
       <div className="all">
-        <div className="group">
+        <div className="group2">
+          <img className="groupphoto" src={groupphoto} alt="groupphoto" />
+          <div className="explanation2">
+            <div className="photos">GROUP TRAINNING</div>
+            <div className="paragraphs">
+              Our Small Group Personal Training is unlike anything you'll have
+              experienced before. In micro training groups of just 6:1, all your
+              workouts are customised, recorded and coached by an experienced
+              personal trainer. The balance of the motivational group
+              environment and 1-2-1 attention makes it the perfect mix to
+              produce fast results, without the bounce back{" "}
+            </div>
+          </div>
+        </div>
+        {/* <div className="group">
           <img className="ladies" src={ladies} alt="ladies" />
           <div className="explanation1">
             <h1>GROUP TRAINNING</h1>
@@ -82,12 +96,12 @@ function Home() {
               produce fast results, without the bounce back{" "}
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="group2">
           <img className="nutrition" src={nutrition} alt="nutrition" />
           <div className="explanation2">
-            <h1>NUTRITION TRAINING</h1>
+            <div className="photos">NUTRITION TRAINING</div>
             <div className="paragraphs">
               We'll teach you how to take control of your health and weight,
               without relying on any specific diet or products, with our 1-2-1
@@ -102,7 +116,7 @@ function Home() {
         <div className="group3">
           <img className="mens" src={mens} alt="mens" />
           <div className="explanation2">
-            <h1>1-2-1 TRAINING</h1>
+            <div className="photos">1-2-1 TRAINING</div>
             <div className="paragraphs">
               1-2-1 personal training is the ultimate investment in your health.
               You'll be working directly with your coach in our private studio,
@@ -117,7 +131,7 @@ function Home() {
         <div className="group4">
           <img className="online" src={online} alt="online" />
           <div className="explanation2">
-            <h1>ONLINE TRAINING</h1>
+            <div className="photos">ONLINE TRAINING</div>
             <div className="paragraphs">
               The Armoury's Online Coaching Packages have been created to take
               the guesswork out of getting in the best shape of your life.
@@ -135,7 +149,9 @@ function Home() {
         <div className="registration1">
           WHERE HEALTH, BEAUTY AND FITNESS MEET
         </div>
-        <button className="appbutton">Appontment</button>
+        <div className="appbutton1">
+          <div className="appbutton">Appontment</div>
+        </div>
       </div>
 
       <div className="finalpart">
