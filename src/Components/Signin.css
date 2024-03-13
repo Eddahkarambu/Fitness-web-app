@@ -35,6 +35,10 @@ h2{
     width:50px;
     justify-content: center;
 }
+.button:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
+}
 .btn{
     justify-content: center;
     display: flex;
