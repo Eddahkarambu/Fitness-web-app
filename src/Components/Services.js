@@ -140,8 +140,8 @@ function Services() {
 
           <div className="completeregistry">
             ...or download, complete, and email your registration to
-            lauren@firstpowerfitness.com. Call +254 799159971 to have any
-            questions answered!
+            crossfitcollective.com. Call +254 799159971 to have any questions
+            answered!
           </div>
         </div>
       </div>
