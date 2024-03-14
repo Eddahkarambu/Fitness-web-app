@@ -36,8 +36,8 @@ function Navbar() {
         </Link>
 
         <div>
-          <Link to="/Schedule Consult" className="Consult">
-            Schedule Consult
+          <Link to="/Consult" className="Consult">
+            Consult
           </Link>
         </div>
       </div>
