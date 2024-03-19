@@ -147,6 +147,7 @@ function Services() {
       </div>
 
       <div className="list">
+        <div className="listcrossfit">CROSSFIT COLLECTIVE</div>
         <div className="listItem">Nairobi, Kenya</div>
         <div className="listItem">Galleria Shopping Mall</div>
         <div className="listItem">Langata Rd/Magadi Rd Junction</div>
